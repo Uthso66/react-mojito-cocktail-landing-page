@@ -20,7 +20,6 @@ export default function Hero() {
       type: "lines",
     });
 
-    // Apply text-gradient class once before animating
     heroSplit.chars.forEach((char: Element) => {
       if (char instanceof HTMLElement) {
         char.classList.add("text-gradient");
@@ -69,7 +68,6 @@ export default function Hero() {
       },
     });
 
-    // Check if video element exists before adding event listener
     if (videoRef.current) {
       videoRef.current.onloadedmetadata = () => {
         if (videoRef.current) {

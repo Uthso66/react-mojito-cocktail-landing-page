@@ -3,7 +3,6 @@ import { sliderLists } from "../../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-// Define the Cocktail interface
 interface Cocktail {
   id: number | string;
   name: string;
@@ -35,6 +34,7 @@ export default function Menu() {
         yPercent: 0,
         opacity: 100,
         ease: "power1.inOut",
+        overwrite: "auto",
       }
     );
     gsap.fromTo(
