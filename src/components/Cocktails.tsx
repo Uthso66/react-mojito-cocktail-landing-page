@@ -8,7 +8,7 @@ export default function Cocktails() {
       scrollTrigger: {
         trigger: "#cocktails",
         start: "top 30%",
-        end: "bottom 80%",
+        end: "bottom top",
         scrub: true,
       },
     });
